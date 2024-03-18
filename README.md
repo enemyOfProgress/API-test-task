@@ -32,7 +32,7 @@ The API will be available on `http://127.0.0.1:8000/docs`
 Run the database locally, for example, PostgreSQL, and create a '.env' file with credentials in the root directory
 Example of '.env' file
 `
-DB_HOST=localhost\n
+DB_HOST=localhost'\n'
 DB_PORT=7997\n
 DB_USER=postgres\n
 DB_PASS=test\n
