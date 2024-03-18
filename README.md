@@ -33,7 +33,7 @@ Run the database locally, for example, PostgreSQL, and create a '.env' file with
 Example of '.env' file
 ```
 DB_HOST=localhost
-DB_PORT=7997
+DB_PORT=5432
 DB_USER=postgres
 DB_PASS=test
 DB_NAME=postgres
