@@ -40,12 +40,12 @@ async def run_workflow(workflow_id: int):
 @router.put("/update/workflow/{w_id}")
 async def update_workflow(update: SchemaWorkflow, w_id: int):
     await WorkflowDAO.update(id=update.workflow_id, workflow_name=update.workflow_name)
-    response = Response(status_code=status.HTTP_201_CREATED)
+    response = Response(status_code=status.HTTP_200_OK)
     return returned_response(code=response.status_code, message="Updated Successfully")
 
 
 @router.delete("/delete/workflow/{w_id}")
 async def delete_workflow(delete: SchemaWorkflow, w_id: int):
     await WorkflowDAO.delete(id=delete.workflow_id, workflow_name=delete.workflow_name)
-    response = Response(status_code=status.HTTP_201_CREATED)
+    response = Response(status_code=status.HTTP_200_OK)
     return returned_response(code=response.status_code, message="Deleted Successfully")
